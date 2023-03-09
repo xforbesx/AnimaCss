@@ -1,0 +1,359 @@
+.contenedoroso{
+    width: 100%;
+display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: center;
+}
+
+
+.bear{
+width: 240px;
+-webkit-animation:updown 2s infinite alternate;
+     animation:updown 2s infinite alternate;
+
+
+
+&__ears{
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+   -ms-flex-pack: justify;
+       justify-content: space-between;
+-webkit-animation:updown 2s infinite alternate;
+       animation:updown 2s infinite alternate;
+-webkit-transform:translateY(10px);
+   -ms-transform:translateY(10px);
+       transform:translateY(10px);
+.ear{
+ width: 50px;
+ height: 60px;
+ background: #000;  
+}
+&__left{
+ -webkit-border-radius:60% 100%;
+         border-radius:40% 100%;
+}
+&__right{
+ -webkit-border-radius:100% 50%;
+         border-radius:100% 50%;
+}
+   .oreja{
+        width: 30px;
+ height: 40px;
+       background: #fff;
+   }
+    &__izq{
+         border-radius:40% 100%;
+}
+&__der{
+       margin-left:10px;
+         border-radius:100% 40%;
+}
+   
+}
+&__body{
+width: 100%;
+height: 230px;
+background: #000;
+-webkit-border-radius: 50% / 40% 40% 60% 60%;
+       border-radius: 50% / 40% 40% 60% 60%;
+}
+&__eyes{
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-justify-content: space-around;
+   -ms-flex-pack: distribute;
+       justify-content: space-around;
+position: relative;
+-webkit-transform:translateY(60px);
+   -ms-transform:translateY(60px);
+       transform:translateY(60px);
+-webkit-transition:all .3s linear;
+-o-transition:all .3s linear;
+transition:all .3s linear;
+.eye{
+ width: 20px;
+ background: #fff;
+ height: 15px;
+ position: absolute;
+ -webkit-border-radius:50% / 40% 40% 60% 60%;
+         border-radius:50% / 40% 40% 60% 60%;
+ -webkit-animation:blink .5s infinite alternate;
+         animation:blink .5s infinite alternate;
+ -webkit-transition:all .3s ease;
+ -o-transition:all .3s ease;
+ transition:all .3s ease;
+}
+&--left{
+ left: 50px;
+ -webkit-transform:skewY(5deg);
+     -ms-transform:skewY(5deg);
+         transform:skewY(5deg);
+}
+&--right{
+ right: 50px;
+ -webkit-transform:skewY(-5deg);
+     -ms-transform:skewY(-5deg);
+         transform:skewY(-5deg);
+}
+}
+&__nose{
+width: 80px;
+background: #fff;
+height: 100px;
+margin: auto;
+-webkit-transform:translateY(80px);
+   -ms-transform:translateY(80px);
+       transform:translateY(80px);
+-webkit-border-radius: 50% / 60% 60% 30% 30%;
+       border-radius: 50% / 60% 60% 30% 30%;
+position: relative;
+-webkit-animation:moveNose 3s infinite;
+       animation:moveNose 3s infinite;
+-webkit-transition:.4s ease;
+-o-transition:.4s ease;
+transition:.4s ease;
+&--inner{
+ width: 50px;
+ height: 26px;
+ background: #000;
+ position: absolute;
+ top: 50%;
+ left:50%;
+ -webkit-transform:translate(-50%,-50%);
+     -ms-transform:translate(-50%,-50%);
+         transform:translate(-50%,-50%);
+ -webkit-border-radius:50% / 40% 40% 60% 60%;
+         border-radius:50% / 40% 40% 60% 60%;
+ -webkit-animation:flip .5s infinite alternate;
+         animation:flip .5s infinite alternate;
+ &:after{
+   content:"";
+   width: 20px;
+   height: 20px;
+   background: #000;
+   position: absolute;
+   bottom: -6px;
+   left:50%;
+   -webkit-border-radius:50px;
+           border-radius:50px;
+   -webkit-transform:translate(-50%);
+       -ms-transform:translate(-50%);
+           transform:translate(-50%);
+   -webkit-box-shadow:
+     20px 5px 0 #fff,
+     -20px 5px 0 #fff;
+           box-shadow:
+     20px 5px 0 #fff,
+     -20px 5px 0 #fff;
+ }
+}
+}
+}
+.shadow{
+width: 200px;
+height: 30px;
+margin: auto;
+margin-top: -20px;
+background: #000;
+opacity:.6;
+display: block;
+-webkit-border-radius:100%;
+     border-radius:100%;
+-webkit-transform:translateY(60px);
+ -ms-transform:translateY(60px);
+     transform:translateY(60px);
+-webkit-filter:blur(17px);
+     filter:blur(17px);
+-webkit-animation:shadow 2s infinite alternate;
+     animation:shadow 2s infinite alternate;
+}
+
+@-webkit-keyframes updown{
+to{
+-webkit-transform:translateY(40px);
+       transform:translateY(40px);
+}
+}
+
+@keyframes updown{
+to{
+-webkit-transform:translateY(40px);
+       transform:translateY(40px);
+}
+}
+@-webkit-keyframes blink{
+from{
+height: 0;
+}
+to{
+height: 15px;
+}
+}
+@keyframes blink{
+from{
+height: 0;
+}
+to{
+height: 15px;
+}
+}
+
+@-webkit-keyframes moveNose{
+0%,100%,90%{
+-webkit-transform:translateY(80px);
+      transform:translateY(80px);   
+}
+20%,30%{
+-webkit-transform:translate(20px,60px);
+       transform:translate(20px,60px);
+}
+60%,70%{
+-webkit-transform:translate(-20px,60px);
+       transform:translate(-20px,60px);
+}
+}
+
+@keyframes moveNose{
+0%,100%,90%{
+-webkit-transform:translateY(80px);
+      transform:translateY(80px);   
+}
+20%,30%{
+-webkit-transform:translate(20px,60px);
+       transform:translate(20px,60px);
+}
+60%,70%{
+-webkit-transform:translate(-20px,60px);
+       transform:translate(-20px,60px);
+}
+}
+@-webkit-keyframes shadow{
+from{
+width: 200px;
+}
+to{
+width: 150px;
+}
+}
+@keyframes shadow{
+from{
+width: 200px;
+}
+to{
+width: 150px;
+}
+}
+
+.container:hover .bear{
+    animation: desplazar 4s ease-in-out, desplazar2 4s ease-in-out 4s;
+animation-iteration-count: 1;
+
+}
+
+.container:hover .bear__body{
+background: #fff;
+
+}
+
+.container:hover .bear__ears__left {
+   width:60px;
+height:150px;
+ background: #fff; 
+
+}
+
+.container:hover .bear__eyes--left {
+   border: solid #911F27;
+ background: #911F27; 
+
+}
+
+.container:hover .bear__eyes--right {
+border: solid #911F27;
+ background: #911F27; 
+
+}
+
+.container:hover  .bear__nose--inner:after {
+
+ background: #FFDADA; 
+
+}
+
+.container:hover  .bear__nose--inner {
+
+ background: #FFDADA; 
+
+}
+
+
+
+.container:hover .bear__ears__right  {
+width:60px;
+height:150px;
+ background: #fff; 
+
+}
+
+.container:hover .bear__ears__izq  {
+height:100px;
+margin-top:20px;
+margin-left:10px;
+ background: #FFDADA; 
+}
+
+.container:hover .bear__ears__der  {
+height:100px;
+margin-top:20px;
+margin-left:10px;
+ background: #FFDADA; 
+}
+@keyframes desplazar {
+0% {
+ transform: translate(0, 0) scale(0) rotate(0.5turn);
+}
+50% {
+ transform: translate(200px, 0) scale(1.3) 
+}
+100% {
+ transform: translate(400px, 0) scale(0) rotate(1turn);
+}
+}
+
+@keyframes desplazar2 {
+       0% {
+ transform: translate(0, 0) scale(0) rotate(0.5turn);
+}
+
+50% {
+ transform: translate(-200px, 0) scale(1.3) 
+}
+100% {
+ transform: translate(-400px, 0) scale(0) rotate(1turn);
+}
+}
+
+.mensaje {
+display:flex;
+ margin-top:50px;
+background-color: white;
+color: black;
+padding: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+opacity: 0;
+pointer-events: none;
+transition: opacity 0.3s ease-in-out;
+}
+
+.container:hover .mensaje {
+opacity: 1;
+pointer-events: auto;
+}
+

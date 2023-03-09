@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color:#865DFF;
+    color: #E9E8E8;
+    font-family: 'Roboto', sans-serif;
+
+
+}
+
+
+
+
+
+h1{font-size: 3.5em; color:  #E9E8E8;;}
+h2{font-size: 1.50em;}
+h3{font-size: 2em;}
+p{font-size: 1.30em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+.container{
+    max-width: 1400px;
+    height: 120px;
+    margin: auto;
+}
+
+header{
+    background-color: #191825;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #E9E8E8;
+    font-size: 2.5em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+header img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav{
+    flex-direction: row;
+    text-align: center; 
+    padding-bottom: 0;
+    padding-left: 400px;
+    font-size: 1.75em;
+    
+}
+
+
+header a{
+    padding: 5px 12px;
+    font-weight: bold;
+    color: #E9E8E8;
+    text-decoration: none;
+}
+
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.titulo-figuras{font-size: 3em; color:  #C47AFF; text-align: center;}
+
+.contenedor1{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #3F3B6C;
+    padding: 20px;
+    border-radius: 50px;
+    
+}
+
+.contenedor1 img{
+    filter: drop-shadow(0 2px 5px rgba(147, 147, 147, 0.905));
+}
+
+.texto{
+    padding-left: 25px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+.contenedor2{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 600px;
+    background-color: #3F3B6C;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.contenedor2 img{
+    filter: drop-shadow(0 2px 5px rgba(147, 147, 147, 0.905));
+}
+
+.texto2{
+    padding-left: 25px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+.contenedor-dibujo{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+
+footer{
+    margin-top: 150px;
+    background-color: #37424F;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: #E9E8E8;
+}
+
+footer .container{
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items:flex-end;
+}
+
+.img{
+    border: solid black;
+   background-color: #EEEEEE;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height: 110px;
+   width: 110px;
+   margin: auto;
+   border-radius: 50%;
+   
+ }
+ img{
+      border-radius: 50%;
+   transition-duration: .2s, 1s;
+  
+ }
+ 
+ img:hover{
+   transform: rotate(1turn) scale(1.3);
+ }
+
+ .boton{
+    background-color: #4CAF50; /* Establece el color de fondo del botón */
+    border: none; /* Quita el borde del botón */
+    color: white; /* Establece el color del texto */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Quita la decoración de enlace */
+    display: inline-block; /* Establece el botón como un elemento en línea */
+    font-size: 24px; /* Establece el tamaño de la fuente */
+    margin: 4px 2px; /* Añade margen al botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    border-radius: 8px; /* Establece un borde redondeado para el botón */
+    box-shadow: 2px 2px 2px #888888; /* Añade una sombra al botón */
+ }
+
+ .boton:hover {
+    background-color: #3e8e41; /* Cambia el color de fondo al pasar el cursor por encima */
+  }
